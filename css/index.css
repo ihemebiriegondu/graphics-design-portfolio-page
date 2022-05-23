@@ -256,10 +256,46 @@ main {
 
 
 
-@media (min-witdth: 800px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+    #testimonials {
+        margin: 4rem 0 3rem 0;
+    }
+
+    #testimonials h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
     
+    .card {
+        padding: 0.56rem;
+    }
+    
+    .card img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+    #testimonials {
+        margin: 4rem 0 3rem 0;
+    }
     
+    #testimonials h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+    #testimonials-div {
+        display: block;
+    }
+    
+    .card {
+        padding: 2rem;
+    }
+    
+    .card img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
 }
