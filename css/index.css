@@ -65,7 +65,7 @@ main {
 .container-fluid {
     margin: 8rem 0 8rem 0;
     padding-top: 5rem;
-    background: radial-gradient(rgba(255, 166, 0, 0.786) 50%, orange);
+    background: rgb(250, 250, 147)
 }
 
 .container-fluid h2 {
@@ -103,7 +103,7 @@ main {
 }
 
 #what-i-do ul div {
-    background-color: bisque;
+    background-color: rgb(251, 179, 45);
     text-align: left;
     padding: 3rem;
     transition: box-shadow 0.5s linear;
@@ -122,10 +122,10 @@ main {
     margin-bottom: 0;
 }
 
-
 #container {
     background: radial-gradient(rgba(255, 166, 0, 0.786) 50%, orange);
     margin: 3rem 0 3rem 0;
+    border-radius: 4px;
 }
 
 #about-me {
@@ -157,16 +157,16 @@ main {
 }
 
 #about-me-img {
-    width: 400px;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 0 4px 4px 0;
 }
 
 #creative {
     margin-top: 5rem;
     margin-bottom: 8rem;
-    background: radial-gradient(rgba(255, 166, 0, 0.786) 50%, orange);
+    background: rgb(250, 250, 147);
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -256,7 +256,127 @@ main {
 
 
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1024px) { 
+    #first-section {
+        padding: 18rem 2rem 10rem 2rem;
+    }
+    
+    #first-section article {
+        margin: 0 20rem 0 0;
+    }
+    
+    #first-section article h3 {
+        font-size: 1.5rem;
+    }
+    
+    
+    #first-section article h2 {
+        margin-top: 1.2rem;
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #person-div {
+        top: 26rem;
+        right: 3rem;
+        width: 18rem;
+        height: 18rem;
+    }
+
+    #contact {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .container-fluid {
+        padding-top: 3rem;
+    }
+
+    .container-fluid h2 {
+        font-size: 2.5rem;
+    }
+    
+    #what-i-do {
+        padding: 3rem 2rem 4rem 0;
+    }
+    
+    #what-i-do ul {
+        list-style: none;
+        display:block;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }    
+    
+    #what-i-do ul article {
+        display: block;
+    }
+    
+    #what-i-do ul article:nth-of-type(1) {
+        display: block;
+
+    }
+    
+    #what-i-do ul article:nth-of-type(3) {
+        display: block;
+    }
+
+    #first-what-i-do-article div{
+        padding: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #second-what-i-do-article div{
+        margin-bottom: 1rem;
+    }
+
+    #third-what-i-do-article div{
+        margin-bottom: 1rem;
+    }
+    
+    #what-i-do ul div {
+        background-color: rgb(251, 179, 45);
+        text-align: left;
+        padding: none;
+        transition: box-shadow 0.5s linear;
+        cursor: auto;
+    }
+
+    #about-me {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8rem;
+    }
+    
+    #about-me h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #about-me h3 {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    #about-me-second-div {
+        width: 100%;
+        height: 40rem;
+    }
+    
+    #creative h2 {
+        font-size: 2.5rem;
+    }
+    
+    #creative-works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 3rem 2rem;
+    }
+    
+    #creative-works img {
+        width: 100%;
+    }
+    
     #testimonials {
         margin: 4rem 0 3rem 0;
     }
@@ -276,7 +396,106 @@ main {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {   
+    #first-section {
+        padding: 18rem 2rem 10rem 2rem;
+    }
+    
+    #first-section article {
+        margin: 0 10rem 0 0;
+    }
+    
+    #first-section article h3 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+    }
+    
+    
+    #first-section article h2 {
+        margin-top: 1.2rem;
+        font-size: 4.5rem;
+        margin-bottom: 0;
+    }
+    
+    #person-div {
+        position: absolute;
+        top: 26rem;
+        right: 1rem;
+        width: 16rem;
+        height: 16rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    
+    #person {
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #contact {
+        margin-top: 3rem;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.1rem;
+    }
+    
+    #about-me {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #about-me h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about-me h3 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about-me-first-div {
+        text-align: left;
+        padding: 3rem;
+    }
+    
+    #about-me-second-div {
+        width: 100%;
+        height: 40rem;
+    }
+    
+    #about-me-img {
+        width: 400px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    #creative h2 {
+        font-size: 2.5rem;
+    }
+    
+    #creative-works {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin: 3rem 2rem;
+    }
+    
+    #creative-works img {
+        width: 100%;
+        height: 15rem;
+        object-fit: fill;
+    }
+    
+    #view-portfolio {
+        font-size: 1.1rem;
+    }
+    
+    #view-portfolio i {
+        padding: 0.3rem;
+    }
+
     #testimonials {
         margin: 4rem 0 3rem 0;
     }
@@ -298,4 +517,96 @@ main {
         width: 3.5rem;
         height: 3.5rem;
     }
+}
+
+@media (max-width: 600px) {
+    #first-section {
+        height: 40rem;
+        padding: 18rem 2rem 10rem 2rem;
+    }
+    
+    #first-section article {
+        margin: 0 10rem 0 0;
+    }
+    
+    #first-section article h3 {
+        font-size: 1.1rem;
+    }
+    
+    #first-section article h2 {
+        margin-top: 1.2rem;
+        font-size: 3.5rem;
+    }
+    
+    #person-div {
+        top: 26rem;
+        right: 0.5rem;
+        width: 14rem;
+        height: 14rem;
+    }
+    
+    #about-me {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #about-me h2 {
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about-me h3 {
+        font-size: 3.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about-me-first-div {
+        text-align: left;
+        padding: 3rem;
+        height: 50%;
+    }
+    
+    #about-me-second-div {
+        width: 100%;
+        height: 20rem;
+    }
+    
+    #about-me-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+}
+
+@media (max-width: 515px) {
+    #first-section {
+        padding: 16rem 2rem 10rem 2rem;
+    }
+    
+    #first-section article h3 {
+        font-size: 1rem;
+    }
+    
+    #first-section article h2 {
+        margin-top: 1.2rem;
+        font-size: 3.5rem;
+    }
+    
+    #person-div {
+        top: 20rem;
+        right: 1rem;
+        width: 11rem;
+        height: 11rem;
+    }
+
+    #contact {
+        margin-top: 3rem;
+        padding: 1rem 2.0rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width :425px) {
+    
 }
