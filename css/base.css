@@ -81,6 +81,29 @@ nav a:hover {
     background-color: rgb(250, 163, 0);
 }
 
+#responsive-nav{
+   /* display: none;*/
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: rgb(2, 2, 112);
+    text-align: center;
+}
+
+#responsive-nav a{
+    margin-right: 0;
+}
+
+#responsive-nav a:hover{
+    background-color: rgb(1, 1, 58);
+}
+
+#responsive-nav i{
+    color: white;
+    position: absolute;
+    right: 3.5rem;
+}
+
 #logo {
     display: inline-block;
     margin-left: 2rem;
@@ -125,7 +148,7 @@ footer {
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 47.5%;
     z-index: 99;
     border: none;
     outline: none;
@@ -162,6 +185,10 @@ footer {
         margin-right: 1rem;
     }
 
+    /*#responsive-nav {
+        display: none;
+    }*/
+
     #menubar {
         display: none;
     }
@@ -174,6 +201,7 @@ footer {
 
     #myBtn {
         padding: 25px 15px;
+        right: 47.5%;
     }
 }
 
@@ -189,25 +217,11 @@ footer {
 
     nav {
         display: none;
-        position: absolute;
-        top: 20%;
-        right: 10%;
-        width: 40%;
-        /*display: flex;
-        flex-direction: column;*/
-        margin-top: 3rem;
-        padding: 1rem;
-        background-color: rgb(2, 2, 112);
-        text-align: center;
     }
 
-    nav a {
-        margin-right: 0;
-    }
-    
-    nav a:hover{
-        background-color: rgb(1, 1, 58);
-    }
+   /* #responsive-nav{
+        display: none;
+    }*/
 
     #callable-div {
         display: flex;
@@ -239,6 +253,7 @@ footer {
 
     #myBtn {
         padding: 25px 15px;
+        right: 45%;
     }
 }
 
@@ -246,38 +261,64 @@ footer {
     #top-header {
         padding: 0;
     }
-    
+
     #callable-div a {
         padding-right: 0;
     }
-    
+
     #number {
         font-size: 0.9rem;
     }
-    
+
     #social-icons {
         margin-right: 1rem;
     }
-    
+
     #social-icons i {
         margin-left: 1rem;
     }
-    
+
     #envelop {
         margin-right: 0.9rem;
     }
-    
+
     #logo {
         display: inline-block;
         margin-left: 1rem;
         margin-top: 1rem;
     }
-    
+
     #logo img {
         width: 7rem;
     }
 
     #menubar {
         margin-right: 1rem;
+    }
+
+    #responsive-nav i{
+        right: 1rem;
+    }
+
+    #myBtn {
+        right: 44%;
+    }
+}
+
+@media (max-width: 344px) {
+    #social-icons {
+        margin-right: 0.9rem;
+    }
+
+    #social-icons i {
+        margin-left: 0.5rem;
+    }
+
+    #menubar {
+        margin-right: 0.9rem;
+    }
+
+    #myBtn {
+        right: 40%;
     }
 }
