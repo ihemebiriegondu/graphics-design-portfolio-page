@@ -81,24 +81,22 @@ nav a:hover {
     background-color: rgb(250, 163, 0);
 }
 
-#responsive-nav{
-   /* display: none;*/
-    display: flex;
-    flex-direction: column;
+#responsive-nav {
+    display: none;
     padding: 1rem;
     background-color: rgb(2, 2, 112);
     text-align: center;
 }
 
-#responsive-nav a{
+#responsive-nav a {
     margin-right: 0;
 }
 
-#responsive-nav a:hover{
+#responsive-nav a:hover {
     background-color: rgb(1, 1, 58);
 }
 
-#responsive-nav i{
+#responsive-nav i {
     color: white;
     position: absolute;
     right: 3.5rem;
@@ -185,9 +183,9 @@ footer {
         margin-right: 1rem;
     }
 
-    /*#responsive-nav {
+    #responsive-nav {
         display: none;
-    }*/
+    }
 
     #menubar {
         display: none;
@@ -219,9 +217,9 @@ footer {
         display: none;
     }
 
-   /* #responsive-nav{
+    #responsive-nav {
         display: none;
-    }*/
+    }
 
     #callable-div {
         display: flex;
@@ -296,7 +294,7 @@ footer {
         margin-right: 1rem;
     }
 
-    #responsive-nav i{
+    #responsive-nav i {
         right: 1rem;
     }
 
