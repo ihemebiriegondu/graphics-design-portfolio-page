@@ -629,6 +629,13 @@ main {
 @media (max-width: 515px) {
     #first-section {
         padding: 16rem 2rem 10rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #first-section article {
+        margin: 0 0 0 0;
+        width: 100%;
     }
     
     #first-section article h3 {
@@ -641,10 +648,16 @@ main {
     }
     
     #person-div {
-        top: 20rem;
-        right: 1rem;
-        width: 11rem;
-        height: 11rem;
+        position: static;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    #person{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%
     }
 
     #contact {
@@ -684,10 +697,8 @@ main {
     }
     
     #person-div {
-        top: 14rem;
-        right: 1rem;
-        width: 11rem;
-        height: 11rem;
+        width: 100%;
+        height: 100%;
     }
 
     #about-me h3 {
@@ -706,8 +717,8 @@ main {
     #person-div {
         top: 14rem;
         right: 1rem;
-        width: 10rem;
-        height: 10rem;
+        width: 100%;
+        height: 100%;
     }
 
     #contact {

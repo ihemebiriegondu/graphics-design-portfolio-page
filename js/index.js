@@ -3,8 +3,6 @@ const closeNavBarIcon = document.getElementById("close-nav-bar-icon");
 const responsiveNav = document.getElementById("responsive-nav");
 const personDiv = document.getElementById("person-div");
 const firstMediaQuery = window.matchMedia("(max-width: 800px)");
-const secondMediaQuery = window.matchMedia("(max-width: 515px)");
-const thirdMediaQuery = window.matchMedia("(max-width: 425px)");
 
 
 function toggleNavBar() {
@@ -13,22 +11,9 @@ function toggleNavBar() {
   menuBar.style.display = "none";
 
   if (firstMediaQuery.matches) {
-    personDiv.style.position = "absolute";
     personDiv.style.top = "36rem";
-    return false;
+    return;
   } 
-  
-  if (secondMediaQuery.matches) {
-    personDiv.style.position= "absolute";
-    personDiv.style.top = "12rem";
-    return false;
-  } 
-  
-  if (thirdMediaQuery.matches) {
-    personDiv.style.position = "absolute";
-    personDiv.style.top = "20rem";
-    return false;
-  }
 }
 
 function closeNavBar() {
@@ -37,17 +22,12 @@ function closeNavBar() {
 
   if (firstMediaQuery.matches) {
     personDiv.style.top="26rem";
-    return false;
-  } 
+    return;
+  }
   
-  if (secondMediaQuery.matches){
-    personDiv.style.top="20rem";
-    return false;
-  } 
-  
-  if (thirdMediaQuery.matches) {
-    personDiv.style.top ="14rem";
-    return false;
+  if (window.innerWidth > 800){
+    menuBar.style.display = "none";
+    responsiveNav.style.display = "none";
   }
 }
 
