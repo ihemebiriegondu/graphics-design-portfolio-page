@@ -47,3 +47,19 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+
+let fullImgBox = document.getElementById("fullImgBox");
+let fullImg = document.getElementById("full-img");
+
+
+
+function openFullImg(pic){
+  fullImgBox.style.display = "flex";
+  fullImg.src = pic;
+}
+
+function closeFullImg(){
+  fullImgBox.style.display = "none";
+}
