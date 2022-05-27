@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(250, 250, 147);
+}
+
+main {
+  width: 100%;
+  padding-top: 4rem ;
+  margin-bottom: 5rem;
+  background: linear-gradient(135deg, red -70%, yellow);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 3rem 0;
+  color: rgb(34, 1, 1);
+}
+
+nav a {
+  color: black;
+}
+
+.column {
+  width: 100%;
+  object-fit: fill;
+  height: 30rem;
+  margin-bottom: 0.5rem;
+  display: none;
+  /* Hide columns by default */
+}
+
+#buttonFullContainer {
+  margin: 0 auto;
+}
+
+#everything {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.show {
+  display: block;
+}
+
+#myBtnContainer {
+  margin:0 auto 5rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  border-radius: 4rem;
+  font-size: 1rem;
+  color: red;
+  background-color: yellow;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.btn:hover {
+  background-color: rgb(192, 205, 50);
+}
+
+.btn.active {
+  background-color: rgb(192, 205, 50);
+  color: rgb(238, 87, 32);
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.content img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 1419px) {
+  .btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  #everything {
+    display: block;
+  }
+
+  .column{
+    height: 50rem;
+  }
+
+  .content img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+   .btn {
+    padding: 1rem 1.5rem;
+   }
+}
+
+@media (max-width: 700px) {
+  #myBtnContainer {
+    margin:0 auto 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 555px) {
+  .btn{
+    padding: 1rem 1rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  
+}

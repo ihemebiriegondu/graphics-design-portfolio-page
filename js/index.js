@@ -5,31 +5,29 @@ const personDiv = document.getElementById("person-div");
 const firstMediaQuery = window.matchMedia("(max-width: 800px)");
 
 
-function toggleNavBar() {
-  responsiveNav.style.display = "flex";
-  responsiveNav.style.flexDirection = "column";
-  menuBar.style.display = "none";
 
-  if (firstMediaQuery.matches) {
-    personDiv.style.top = "36rem";
-    return;
-  } 
-}
+if (window.innerWidth < 800) {
 
-function closeNavBar() {
-  responsiveNav.style.display = "none";
-  menuBar.style.display = "block";
-
-  if (firstMediaQuery.matches) {
-    personDiv.style.top="26rem";
-    return;
-  }
-  
-  if (window.innerWidth > 800){
+  function toggleNavBar() {
+    responsiveNav.style.display = "flex";
+    responsiveNav.style.flexDirection = "column";
     menuBar.style.display = "none";
+    personDiv.style.top = "36rem";
+  }
+
+  function closeNavBar() {
     responsiveNav.style.display = "none";
+    menuBar.style.display = "block";
+    personDiv.style.top = "26rem";
+  }
+
+  if (window.innerWidth > 800) {
+    responsiveNav.style.display = "none";
+    menuBar.style.display = "none";
   }
 }
+
+
 
 
 
