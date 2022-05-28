@@ -414,16 +414,4 @@ nav a {
     grid-template-rows: 1fr 1fr;
     gap: 0.5rem;
   }
-
-  .btn {
-    padding: 2px 0.5rem;
-  }
-
-}
-
-@media (max-width: 555px) {
-  #everything {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
