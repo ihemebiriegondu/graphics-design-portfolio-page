@@ -123,6 +123,11 @@ nav a:hover {
 
 #menubar {
     display: none;
+    cursor: pointer;
+}
+
+#close-nav-bar-icon{
+    cursor: pointer;
 }
 
 #footer-logo {

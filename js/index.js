@@ -2,40 +2,30 @@ const menuBar = document.getElementById("menubar");
 const closeNavBarIcon = document.getElementById("close-nav-bar-icon");
 const responsiveNav = document.getElementById("responsive-nav");
 const personDiv = document.getElementById("person-div");
-const firstMediaQuery = window.matchMedia("(max-width: 800px)");
+const mediaQuery = window.matchMedia("(min-width: 800px");
 
 
+function toggleNavBar() {
+  responsiveNav.style.display = "flex";
+  responsiveNav.style.flexDirection = "column";
+  menuBar.style.display = "none";
+  personDiv.style.top = "36rem";
+}
 
-if (window.innerWidth < 800) {
+menuBar.addEventListener("click", toggleNavBar);
 
-  function toggleNavBar() {
-    responsiveNav.style.display = "flex";
-    responsiveNav.style.flexDirection = "column";
-    menuBar.style.display = "none";
-    personDiv.style.top = "36rem";
-  }
+function closeNavBar() {
+  responsiveNav.style.display = "none";
+  menuBar.style.display = "block";
+  personDiv.style.top = "26rem";
 
-  function closeNavBar() {
-    responsiveNav.style.display = "none";
-    menuBar.style.display = "block";
-    personDiv.style.top = "26rem";
-  }
-
-  if (window.innerWidth > 800) {
+  if (mediaQuery.matches){
     responsiveNav.style.display = "none";
     menuBar.style.display = "none";
   }
 }
 
-
-
-
-
-menuBar.addEventListener("click", toggleNavBar);
 closeNavBarIcon.addEventListener("click", closeNavBar);
-
-
-
 
 
 
@@ -56,9 +46,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
-
-//portfolio page
-
